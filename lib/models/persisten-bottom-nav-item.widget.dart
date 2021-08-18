@@ -61,7 +61,7 @@ class PersistentBottomNavBarItem {
       this.title,
       this.contentPadding = 5.0,
       this.activeColorPrimary = CupertinoColors.activeBlue,
-      this.activeColorSecondary,
+      this.activeColorSecondary = CupertinoColors.white,
       this.inactiveColorPrimary,
       this.inactiveColorSecondary = CupertinoColors.systemGrey,
       this.opacity = 1.0,

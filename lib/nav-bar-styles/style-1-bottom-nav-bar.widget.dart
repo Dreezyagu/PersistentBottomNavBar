@@ -21,9 +21,7 @@ class BottomNavStyle1 extends StatelessWidget {
                 navBarEssentials!.itemAnimationProperties?.curve ?? Curves.ease,
             padding: EdgeInsets.all(item.contentPadding),
             decoration: BoxDecoration(
-              color: isSelected
-                  ? item.activeColorPrimary.withOpacity(0.2)
-                  : navBarEssentials!.backgroundColor!.withOpacity(0.0),
+              color: Color(0xff0383A8),
               borderRadius: BorderRadius.all(Radius.circular(50)),
             ),
             child: Container(
@@ -63,13 +61,8 @@ class BottomNavStyle1 extends StatelessWidget {
                                     child: Text(
                                   item.title!,
                                   style: item.textStyle != null
-                                      ? (item.textStyle!.apply(
-                                          color: isSelected
-                                              ? (item.activeColorSecondary ==
-                                                      null
-                                                  ? item.activeColorPrimary
-                                                  : item.activeColorSecondary)
-                                              : item.inactiveColorPrimary))
+                                      ? (item.textStyle!
+                                          .apply(color: Color(0xffffffff)))
                                       : TextStyle(
                                           color:
                                               (item.activeColorSecondary == null
